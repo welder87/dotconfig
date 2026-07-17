@@ -214,71 +214,7 @@
     "chat.math.enabled": false,
     "chat.agent.thinkingStyle": "collapsed",
     "inlineChat.accessibleDiffView": "off",
-    // PYTHON ----------------------------------------------------------
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        },
-        "editor.rulers": [88],
-        "files.insertFinalNewline": true,
-    },
-    "python.terminal.activateEnvironment": true,
-    "python.terminal.shellIntegration.enabled": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "standard",
-    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
-    "python.analysis.diagnosticSeverityOverrides": {
-        "reportGeneralTypeIssues": false
-    },
-    "python.analysis.completeFunctionParens": false,
-    "python.createEnvironment.trigger": "off",
-    "python.analysis.reportExtraTelemetry": false,
-    "python.analysis.addHoverSummaries": false,
-    "python.analysis.ignore": [
-        "**/*.py"
-    ],
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.autoSearchPaths": false,
-    "python.analysis.importFormat": "absolute",
-    "python.experiments.enabled": false,
-    "python.testing.autoTestDiscoverOnSaveEnabled": false,
-    // GOLANG ----------------------------------------------------------
-    "[go]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        },
-        "editor.defaultFormatter": "golang.go",
-        "editor.rulers": [88]
-    },
-    "go.formatTool": "gofmt",
-    "go.delveConfig": {
-        "debugAdapter": "dlv-dap",
-        "dlvFlags": [
-            "--only-same-user=false"
-        ]
-    },
-    "gopls": {
-        "ui.semanticTokens": true,
-        "formatting.gofumpt": true
-    },
-    // SQL -------------------------------------------------------------
-    "pgsql.showConnectionStatusLens": false,
-    "pgsql.intelliSense.enableIntelliSense": true,
-    "pgsql.copilot.enable": false,
-    "pgsql.copilot.accessMode": "ro",
-    "pgsql.copilot.modelOptions": {},
-    "sql-formatter.dialect": "pl/sql",
-    "[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
-        "editor.formatOnSave": true,
-    },
     // OTHER -----------------------------------------------------------
-    // "problems.decorations.enabled": true,
     "outline.icons": false,
     "scm.compactFolders": false,
     "notebook.consolidatedOutputButton": false,
@@ -286,14 +222,8 @@
     "notebook.globalToolbarShowLabel": "never",
     "breadcrumbs.enabled": false,
     "breadcrumbs.icons": false,
-
     "cSpell.language": "en,ru",
-    "vsicons.dontShowNewVersionMessage": true,
     "update.showReleaseNotes": false,
-    "database-client.autoSync": false,
-    "database-client.telemetry.usesOnlineServices": false,
-    "docker.lsp.telemetry": "off",
-    "autoDocstring.docstringFormat": "sphinx-notypes",
     "files.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -301,19 +231,7 @@
         "**/build": true,
         "**/.git": true
     },
-    "typescript.validate.enable": false,
-    "javascript.validate.enable": false,
     "window.zoomLevel": 2,
-    "pgsql.serverGroups": [
-        {
-            "name": "Servers",
-            "id": "9E93DADE-06C1-4205-B17C-2F3582BBC91C",
-            "isDefault": true
-        }
-    ],
-    "terminal.integrated.commandsToSkipShell": [
-        "kilo-code.new.agentManagerOpen",
-        "kilo-code.new.agentManager.showTerminal"
-    ],
-
+    "chat.titleBar.signIn.enabled": false,
+    "workbench.browser.showInTitleBar": false,
 }
