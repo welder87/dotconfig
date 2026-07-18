@@ -1,0 +1,30 @@
+[include]
+	path = ~/.gituser
+[core]
+	autocrlf = false
+	excludesfile = ~/.gitexcludes
+	editor = hx
+	pager = delta
+[init]
+	defaultBranch = master
+[alias]
+	st = status
+	cmt = commit
+	cmtv = commit -v
+	cmta = commit -a
+	cmtcn = reset --mixed HEAD~1
+	treev = log --decorate --oneline --graph
+	shortv = log --decorate --oneline
+	lcm = log -n 1 --pretty=format:"%s"
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	light = true
+	line-numbers = true
+	side-by-side = true
+[merge]
+	conflictStyle = zdiff3
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED

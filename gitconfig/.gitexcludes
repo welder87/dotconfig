@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.zed/
+.helix/
+.zcode
+**/.zed/
+**/.vscode/
+**/.idea/
+**/.helix/
+**/..zcode/
+.codebook.toml
