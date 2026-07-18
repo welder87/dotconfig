@@ -1,0 +1,32 @@
+theme = "cyan_light"
+
+[editor]
+mouse = true
+auto-format = false
+insert-final-newline = false
+bufferline = "multiple"
+default-line-ending = "lf"
+popup-border = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+

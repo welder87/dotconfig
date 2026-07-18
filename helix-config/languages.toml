@@ -1,0 +1,38 @@
+[[language]]
+name = "python"
+language-servers = ["pylsp", "ruff"]
+auto-format = true
+formatter = { command = "ruff", args = ["format", "-"] }
+scope = "source.python"
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
+soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
+auto-format = true
+formatter = {command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint.json"]}
+
+[language-server.marksman]
+command = "marksman"
+
+[language-server.ruff]
+command = "ruff"
+args = ["lsp"]
+
+[language-server.pylsp]
+command = "pylsp"
+
+[language-server.ruff-lsp]
+command = "ruff-lsp"
+
+[language.debugger]
+name = "debugpy"
+transport = "stdio"
+command = "python3"
+args = ["-m", "debugpy.adapter"]
+
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [{ name = "entrypoint", completion = "filename", default = "." }]
+args = { mode = "debug", program = "{0}" }
