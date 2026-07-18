@@ -1,0 +1,328 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "format_on_save": "off",
+  "toolbar": {
+    "quick_actions": true,
+    "selections_menu": false,
+    "agent_review": true,
+    "code_actions": false,
+  },
+  "title_bar": {
+    "show_branch_status_icon": true,
+    "show_branch_name": true,
+  },
+  "max_tabs": 5,
+  "tab_bar": {
+    "show": false,
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "neighbour",
+    "show_close_button": "always",
+    "show_diagnostics": "errors",
+  },
+  "search": {
+    "button": false,
+  },
+  "collaboration_panel": {
+    "dock": "right",
+    "default_width": 1200,
+    "button": false,
+  },
+  "outline_panel": {
+    "dock": "right",
+    "default_width": 1200,
+    "button": false,
+  },
+  "debugger": {
+    "dock": "right",
+    "log_dap_communications": true,
+    "format_dap_log_messages": true,
+    "button": false,
+    //debugpy | ubuntu
+    // Download https://pypi.org/project/debugpy/#files
+    // The unzipped debugpy directory must be located at ~/.local/share/zed/debug_adapters/Debugpy
+  },
+  "dap": {
+    "Delve": {
+      "args": ["dap", "--listen", "127.0.0.1:40000", "--only-same-user=false"],
+    },
+  },
+  "git_panel": {
+    "sort_by_path": true,
+    "collapse_untracked_diff": false,
+    "show_count_badge": true,
+    "file_icons": true,
+    "tree_view": true,
+    "dock": "right",
+    "default_width": 1200,
+    "button": false,
+  },
+  "project_panel": {
+    "dock": "right",
+    "default_width": 1200,
+    "button": false,
+  },
+  "terminal": {
+    "dock": "right",
+    "button": false,
+    "copy_on_select": true,
+    "default_width": 1200,
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false,
+  },
+  // ui
+  "ui_font_size": 20,
+  // buffer
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 18,
+  "buffer_font_features": {
+    "liga": false,
+    "calt": false,
+  },
+  "buffer_font_weight": 600,
+  // themes
+  "theme": {
+    "mode": "system",
+    "light": "Cyan Light",
+    "dark": "One Dark",
+  },
+  "icon_theme": "Material Icon Theme",
+  // editor
+  "show_whitespaces": "all",
+  "show_edit_predictions": false,
+  // keymap
+  "base_keymap": "VSCode",
+  // git
+  "git": {
+    "blame": {
+      "show_avatar": false,
+    },
+    "inline_blame": {
+      "show_commit_summary": true,
+      "enabled": false,
+    },
+    "gutter_debounce": 100,
+    "git_gutter": "tracked_files",
+  },
+  "active_pane_modifiers": {
+    "border_size": 2,
+    "inactive_opacity": 0.95,
+  },
+  "current_line_highlight": "line",
+  // languages
+  "languages": {
+    "Python": {
+      "code_actions_on_format": {
+        "source.fixAll.ruff": true,
+        "source.organizeImports.ruff": true,
+      },
+      "show_wrap_guides": true,
+      "ensure_final_newline_on_save": true,
+      "format_on_save": "on",
+    },
+    "Go": {
+      "format_on_save": "on",
+      "language_servers": ["gopls", "codebook"],
+    },
+    "TOML": {
+      "format_on_save": "off",
+    },
+    "Git Rebase": {
+      "wrap_guides": [50, 72],
+    },
+    "Git Attributes": {
+      "wrap_guides": [50, 72],
+    },
+    "Git Config": {
+      "wrap_guides": [50, 72],
+    },
+    "Git Ignore": {
+      "wrap_guides": [50, 72],
+    },
+    "Git Commit": {
+      "wrap_guides": [50, 72],
+    },
+    "Make": {
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "use_autoclose": true,
+      "remove_trailing_whitespace_on_save": true,
+    },
+    "C": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "wrap_guides": [80],
+      "ensure_final_newline_on_save": true,
+    },
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": "prettier",
+    },
+    // https://github.com/sql-formatter-org/sql-formatter/
+    // npm install -g sql-formatter
+    // .sql-formatter.json in root dir
+    // "SQL": {
+    //   "format_on_save": "on",
+    //   "formatter": {
+    //     "external": {
+    //       "command": "sql-formatter",
+    //     }
+    //   }
+    // }
+  },
+  "lsp": {
+    // если не заработает сразу `sudo apt-get install clangd`
+    "clangd": {
+      "binary": {
+        "path": "/usr/bin/clangd",
+        "arguments": [],
+      },
+    },
+  },
+  "autosave": "on_focus_change",
+  "remove_trailing_whitespace_on_save": true,
+  "close_on_file_delete": true,
+  "confirm_quit": true,
+  "ensure_final_newline_on_save": false,
+  "auto_install_extensions": {
+    // https://zed-extensions.nyc3.digitaloceanspaces.com/extensions locked
+    "html": false,
+    // python -----------------
+    // "python-snippets": true,
+    // docker -----------------
+    // "dockerfile": true,
+    // "docker-compose": true,
+    // sql --------------------
+    // "sql": true,
+    // build ------------------
+    // "make": true,
+    // git --------------------
+    // "git-firefly": true,
+    // themes -----------------
+    // "macos-classic": true,
+    // "material-icon-theme": true,
+    // file format ------------
+    // "toml": true,
+    // "log": true,
+    // "zed-ini": true,
+    // "zed-structured-text": true,
+    // spell checking
+    // https://cspell.org/docs/installation
+    // https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/ru_RU
+    // "cspell": true
+  },
+  "file_types": {
+    "Dockerfile": ["Dockerfile*", "*.dockerfile", ".dockerignore"],
+    "YAML": [
+      "*.yml",
+      "*.yaml",
+      ".github/**/*.yml",
+      "k8s/**/*.yml",
+      "k8s/**/*.yaml",
+      "kubernetes/**/*.yml",
+      "kubernetes/**/*.yaml",
+      ".kube/*.yml",
+      ".kube/*.yaml",
+      "docker-compose*.yml",
+      "docker-compose*.yaml",
+    ],
+    "Python": ["*.py", "*.pyw", "*.pyi"],
+    "Git Attributes": ["**/{git,.git,.git/info}/attributes"],
+    "Git Config": [
+      "*.gitconfig",
+      "**/{git,.git/modules,.git/modules/*}/config",
+    ],
+    "Git Ignore": ["**/{git,.git}/ignore", "**/.git/info/exclude"],
+  },
+  "auto_update": false,
+  // agent
+  "agent": {
+    "default_model": {
+      "provider": "OpenAI Compatible",
+      "model": "glm-5.2",
+      "enable_thinking": false
+    },
+    "dock": "right",
+    "enabled": true,
+    "button": true,
+  },
+  "language_models": {
+    "openai_compatible": {
+      "RouterAI": {
+        "api_url": "https://routerai.ru/api/v1",
+        "available_models": [
+          {
+            "name": "deepseek/deepseek-v4-flash",
+            "display_name": "DeepSeek V4 Flash (RouterAI)",
+            "max_tokens": 100000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 100000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          }
+        ],
+      },
+      "OpenAI Compatible": {
+        "api_url": "https://api.z.ai/api/coding/paas/v4",
+        "available_models": [
+          {
+            "name": "glm-5.2",
+            "display_name": "GLM 5.2",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": true
+            }
+          },
+          {
+            "name": "glm-5.1",
+            "display_name": "GLM 5.1",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": true
+            }
+          },
+          {
+            "name": "glm-5-turbo",
+            "display_name": "GLM-5-Turbo",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+

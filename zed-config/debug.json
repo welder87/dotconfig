@@ -1,0 +1,17 @@
+[
+  {
+    "adapter": "Debugpy",
+    "label": "Debug current test set",
+    "name": "Python: Debug pytest",
+    "type": "python",
+    "request": "launch",
+    "module": "pytest",
+    "args": ["${ZED_RELATIVE_FILE}::${ZED_SELECTED_TEXT}", "-vv"],
+    "console": "integratedTerminal",
+    "justMyCode": false,
+    "stopOnEntry": false,
+    "showReturnValue": true,
+    "redirectOutput": false,
+    "subProcess": false
+  }
+]

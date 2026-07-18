@@ -1,0 +1,200 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // "j k": "vim::SwitchToNormalMode"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-o": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-o": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "((((Workspace || Editor) || Pane) || GitPanel) || ProjectPanel)",
+    "bindings": {
+      "ctrl-shift-t": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-m": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-m": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "(BufferSearchBar || ProjectSearchBar)",
+    "bindings": {
+      "alt-n": "search::ToggleSelection"
+    }
+  },
+  {
+    "context": "(BufferSearchBar || ProjectSearchBar)",
+    "bindings": {
+      "alt-e": null
+    }
+  },
+  {
+    "context": "(((((Dock || Workspace) || OutlinePanel) || ProjectPanel) || CollabPanel) || (Editor && mode == auto_height))",
+    "bindings": {
+      "alt-e": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::DuplicateLineUp"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-t": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-t": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-t": null
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "ctrl-shift-g": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-b": null
+    }
+  },
+  {
+    "context": "SettingsWindow",
+    "bindings": {
+      "ctrl-shift-e": null
+    }
+  },
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "ctrl-shift-e": null
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-shift-e": null
+    }
+  },
+  {
+    "context": "((((Workspace || Editor) || Pane) || GitPanel) || ProjectPanel)",
+    "bindings": {
+      "ctrl-shift-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": null
+    }
+  },
+  {
+    "context": "((((Workspace || Editor) || Pane) || GitPanel) || ProjectPanel)",
+    "bindings": {
+      "ctrl-shift-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-g": null
+    }
+  },
+  {
+    "context": "((((Workspace || Editor) || Pane) || GitPanel) || ProjectPanel)",
+    "bindings": {
+      "ctrl-shift-d": "debug_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-d": null
+    }
+  },
+  {
+    "context": "Workspace || Pane || GitPanel || ProjectPanel",
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-m": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-shift-m": "editor::ToggleInlineDiagnostics"
+    }
+  }
+]
