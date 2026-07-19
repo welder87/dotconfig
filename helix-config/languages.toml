@@ -7,15 +7,53 @@ scope = "source.python"
 rulers = [88]
 
 [[language]]
+name = "go"
+auto-format = true
+language-servers = ["gopls", "golangci-lint-lsp"]
+rulers = [88]
+
+[[language]]
 name = "markdown"
 language-servers = ["marksman"]
 soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
 auto-format = true
-formatter = {command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint.json"]}
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/dprint.jsonc"] }
 rulers = [80]
 
-[language-server.marksman]
-command = "marksman"
+[[language]]
+name = "bash"
+file-types = ["sh", "bash", "env", ".bashrc", ".bash_profile", ".profile"]
+rulers = [80]
+
+[[language]]
+name = "sql"
+language-servers = ["postgres-lsp"]
+
+[[language]]
+name = "json"
+rulers = [120]
+
+[[language]]
+name = "jsonc"
+rulers = [120]
+
+[[language]]
+name = "dockerfile"
+rulers = [120]
+
+[[language]]
+name = "git-commit"
+rulers = [50, 72]
+
+[[language]]
+name = "git-rebase"
+rulers = [50, 72]
+
+# language servers
+
+[language-server.gopls]
+command = "gopls"
+args = ["-logfile=/tmp/gopls.log", "serve"]
 
 [language-server.ruff]
 command = "ruff"
@@ -27,30 +65,9 @@ command = "pylsp"
 [language-server.ruff-lsp]
 command = "ruff-lsp"
 
-[language.debugger]
-name = "debugpy"
-transport = "stdio"
-command = "python3"
-args = ["-m", "debugpy.adapter"]
-
-[[language.debugger.templates]]
-name = "source"
-request = "launch"
-completion = [{ name = "entrypoint", completion = "filename", default = "." }]
-args = { mode = "debug", program = "{0}" }
-
-[language-server.gopls]
-command = "gopls"
-args = ["-logfile=/tmp/gopls.log",  "serve"]
 [language-server.gopls.config]
 "ui.diagnostic.staticcheck" = true
 gofumpt = true
-
-[[language]]
-name = "go"
-auto-format = true
-language-servers = [ "gopls", "golangci-lint-lsp" ]
-rulers = [88]
 
 [language-server.golangci-lint-lsp]
 command = "golangci-lint-langserver"
@@ -58,18 +75,21 @@ command = "golangci-lint-langserver"
 [language-server.golangci-lint-lsp.config]
 command = ["golangci-lint", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
 
-[[language]]
-name = "sql"
-language-servers = ["postgres-lsp"]
+[language-server.marksman]
+command = "marksman"
+
+[language.debugger]
+name = "debugpy"
+transport = "stdio"
+command = "python3"
+args = ["-m", "debugpy.adapter"]
 
 [language-server.postgres-lsp]
 command = "postgres-language-server"
 args = ["--stdio"]
 
-[[language]]
-name = "git-commit"
-rulers = [50, 72]
-
-[[language]]
-name = "git-rebase"
-rulers = [50, 72]
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [{ name = "entrypoint", completion = "filename", default = "." }]
+args = { mode = "debug", program = "{0}" }
