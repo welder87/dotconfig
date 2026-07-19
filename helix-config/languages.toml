@@ -4,6 +4,7 @@ language-servers = ["pylsp", "ruff"]
 auto-format = true
 formatter = { command = "ruff", args = ["format", "-"] }
 scope = "source.python"
+rulers = [88]
 
 [[language]]
 name = "markdown"
@@ -11,6 +12,7 @@ language-servers = ["marksman"]
 soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
 auto-format = true
 formatter = {command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint.json"]}
+rulers = [80]
 
 [language-server.marksman]
 command = "marksman"
@@ -48,6 +50,7 @@ gofumpt = true
 name = "go"
 auto-format = true
 language-servers = [ "gopls", "golangci-lint-lsp" ]
+rulers = [88]
 
 [language-server.golangci-lint-lsp]
 command = "golangci-lint-langserver"
@@ -62,3 +65,11 @@ language-servers = ["postgres-lsp"]
 [language-server.postgres-lsp]
 command = "postgres-language-server"
 args = ["--stdio"]
+
+[[language]]
+name = "git-commit"
+rulers = [50, 72]
+
+[[language]]
+name = "git-rebase"
+rulers = [50, 72]
