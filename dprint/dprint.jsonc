@@ -1,0 +1,11 @@
+{
+  "markdown": {},
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json"
+  ],
+  "plugins": [
+    "/home/welder87/.cache/dprint-plugins/markdown.wasm"
+  ],
+  "includes": ["**/*.md"]
+}
