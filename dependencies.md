@@ -2,7 +2,7 @@
 
 ## Tools
 
-### xelix
+### helix
 
 - [Docs1]https://helix-editor.com/
 - [Docs2]https://helix-editor.vercel.app/
@@ -12,6 +12,12 @@
 snap install --classic helix
 hx ~/.config/helix/config.toml
 hx ~/.config/helix/languages.toml
+```
+
+### ripgrep
+
+```bash
+sudo apt-get install ripgrep
 ```
 
 ### zellij
