@@ -1,11 +1,17 @@
 {
-  "markdown": {},
+  "markdown": {
+    "lineWidth": 80,
+    "textWrap": "always"
+  },
   "excludes": [
     "**/node_modules",
     "**/*-lock.json"
   ],
   "plugins": [
-    "/home/welder87/.cache/dprint-plugins/markdown.wasm"
-  ],
-  "includes": ["**/*.md"]
+    "~/.cache/dprint-plugins/dockerfile-0.4.1.wasm",
+    "~/.cache/dprint-plugins/json-0.23.0.wasm",
+    "~/.cache/dprint-plugins/markdown-0.22.1.wasm",
+    "~/.cache/dprint-plugins/pretty_yaml-v0.6.0.wasm",
+    "~/.cache/dprint-plugins/toml-0.7.0.wasm",
+  ]
 }
