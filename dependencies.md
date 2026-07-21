@@ -1,5 +1,24 @@
 # Dependencies
 
+## Wayland
+
+### Chrome, Electron и т.п.
+
+В зависимости от места установки `~/.local/share/applications/`
+или `/usr/share/applications/` открыть файл *.desktop .
+
+Нужно добавить флагу в кажду строку с `Exec`:
+```text
+Exec=/usr/bin/google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+```
+
+Проверка для Chrome:
+```
+chrome://flags
+chrome://version
+chrome://gpu
+```
+
 ## Tools
 
 ### helix
@@ -12,6 +31,25 @@
 snap install --classic helix
 hx ~/.config/helix/config.toml
 hx ~/.config/helix/languages.toml
+```
+
+### keyd
+
+-[Src](https://github.com/rvaiya/keyd)
+
+До ubuntu 25.04
+
+```bash
+git clone https://github.com/rvaiya/keyd
+cd keyd
+make && sudo make install
+sudo systemctl enable --now keyd
+```
+
+С ubuntu 25.04
+
+```bash
+sudo apt install keyd
 ```
 
 ### ripgrep
