@@ -1,4 +1,18 @@
 [opener]
 edit = [
-    { run = 'hx "$@"', desc = "Edit", block = true, for = "unix" }
+  {
+    run = 'zellij run -- hx "$0"',
+    desc = "Helix (new pane)",
+    block = true,
+    for = "unix"
+  },
 ]
+
+[mgr]
+show_hidden = true
+show_symlink = true
+sort_translit = true
+linemode = "size_and_mtime"
+
+[preview]
+wrap = "yes"
