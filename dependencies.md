@@ -4,15 +4,17 @@
 
 ### Chrome, Electron и т.п.
 
-В зависимости от места установки `~/.local/share/applications/`
-или `/usr/share/applications/` открыть файл *.desktop .
+В зависимости от места установки `~/.local/share/applications/` или
+`/usr/share/applications/` открыть файл *.desktop .
 
 Нужно добавить флагу в кажду строку с `Exec`:
+
 ```text
 Exec=/usr/bin/google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 ```
 
 Проверка для Chrome:
+
 ```
 chrome://flags
 chrome://version
@@ -23,8 +25,8 @@ chrome://gpu
 
 ### helix
 
-- [Docs1]https://helix-editor.com/
-- [Docs2]https://helix-editor.vercel.app/
+- [Docs1](https://helix-editor.com/)
+- [Docs2](https://helix-editor.vercel.app/)
 - [Src](https://github.com/helix-editor/helix)
 
 ```bash
@@ -35,7 +37,7 @@ hx ~/.config/helix/languages.toml
 
 ### keyd
 
--[Src](https://github.com/rvaiya/keyd)
+- [Src](https://github.com/rvaiya/keyd)
 
 До ubuntu 25.04
 
@@ -50,6 +52,23 @@ sudo systemctl enable --now keyd
 
 ```bash
 sudo apt install keyd
+```
+
+### httprunner
+
+- [Docs](https://christianhelle.com/httprunner/)
+- [Src](https://github.com/christianhelle/httprunner)
+
+```bash
+sudo snap install httprunner
+```
+
+### markpad
+
+- [Src](https://github.com/alecdotdev/Markpad)
+
+```bash
+sudo snap install markpad
 ```
 
 ### ripgrep
@@ -81,27 +100,42 @@ zellij setup --dump-config > ~/.config/zellij/config.kdl
 sudo snap install yazi --classic
 ```
 
-
 ### bat
+
 ### glow
+
+Просмотр markdown в терминале.
+
+- [Src](https://github.com/charmbracelet/glow)
+
+```bash
+go install github.com/charmbracelet/glow/v2@latest
+```
+
+Snap версия проблемная, так как полностью в песочнице.
+
+```bash
+sudo snap install glow
+```
+
 ### delta
+
 ### mergiraf
+
 ### dprint
 
 ## lsp
 
 ### sql
 
-postgres-language-server
-https://pg-language-server.com/latest/
+postgres-language-server https://pg-language-server.com/latest/
 
 ### go
-https://go.dev/doc/install
-https://go.dev/gopls/
+
+https://go.dev/doc/install https://go.dev/gopls/
 https://github.com/go-delve/delve
 https://github.com/nametake/golangci-lint-langserver
 
 ### markdown
 
-https://oxide.md/
-https://github.com/Feel-ix-343/markdown-oxide
+https://oxide.md/ https://github.com/Feel-ix-343/markdown-oxide
