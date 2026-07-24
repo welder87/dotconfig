@@ -120,6 +120,14 @@ sudo snap install glow
 
 ### delta
 
+- [Docs](https://dandavison.github.io/delta/)
+- [Src](https://github.com/dandavison/delta)
+- [Releases](https://github.com/dandavison/delta/releases)
+
+```bash
+sudo dpkg -i file.deb
+```
+
 ### mergiraf
 
 ### dprint
