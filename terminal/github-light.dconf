@@ -1,0 +1,13 @@
+[org/gnome/terminal/legacy/profiles:/:5578e11a-d1e1-443d-8aa9-112394be062e]
+visible-name='GitHub Light'
+use-theme-colors=false
+background-color='#FFFFFFFFFFFF'
+foreground-color='#242429292E2E'
+bold-color-same-as-fg=true
+cursor-colors-set=true
+cursor-background-color='#03036666D6D6'
+cursor-foreground-color='#FFFFFFFFFFFF'
+highlight-colors-set=true
+highlight-background-color='#F6F6F8F8FAFA'
+highlight-foreground-color='#242429292E2E'
+palette=['#242429292E2E', '#D7D73A3A4949', '#2828A7A74545', '#DBDBABAB0909', '#03036666D6D6', '#5A5A3232A3A3', '#05059898BCBC', '#6A6A73737D7D', '#95959D9DA5A5', '#CBCB24243131', '#222286863A3A', '#B0B088880000', '#00005C5CC5C5', '#5A5A3232A3A3', '#31319292AAAA', '#D1D1D5D5DADA']
