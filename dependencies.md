@@ -63,14 +63,6 @@ sudo apt install keyd
 sudo snap install httprunner
 ```
 
-### markpad
-
-- [Src](https://github.com/alecdotdev/Markpad)
-
-```bash
-sudo snap install markpad
-```
-
 ### ripgrep
 
 ```bash
