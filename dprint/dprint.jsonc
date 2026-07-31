@@ -12,6 +12,6 @@
     "~/.cache/dprint-plugins/json-0.23.0.wasm",
     "~/.cache/dprint-plugins/markdown-0.22.1.wasm",
     "~/.cache/dprint-plugins/pretty_yaml-v0.6.0.wasm",
-    "~/.cache/dprint-plugins/toml-0.7.0.wasm",
+    "~/.cache/dprint-plugins/toml-0.7.0.wasm"
   ]
 }

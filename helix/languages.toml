@@ -17,7 +17,7 @@ name = "markdown"
 language-servers = ["marksman"]
 soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
 auto-format = true
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/dprint.jsonc"] }
+formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "md", "--config-discovery=global"] }
 rulers = [80]
 
 [[language]]
