@@ -2,7 +2,6 @@ theme = "cyan_light"
 
 [editor]
 mouse = true
-auto-format = false
 insert-final-newline = false
 bufferline = "multiple"
 default-line-ending = "lf"

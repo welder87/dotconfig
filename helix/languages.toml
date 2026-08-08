@@ -9,6 +9,7 @@ rulers = [88]
 [[language]]
 name = "go"
 auto-format = true
+formatter = { command = "golangci-lint", args = ["fmt", "--stdin"] }
 language-servers = ["gopls", "golangci-lint-lsp"]
 rulers = [88]
 
@@ -21,31 +22,38 @@ formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "md", "--confi
 rulers = [80]
 
 [[language]]
+auto-format = false
 name = "bash"
 file-types = ["sh", "bash", "env", ".bashrc", ".bash_profile", ".profile"]
 rulers = [80]
 
 [[language]]
+auto-format = false
 name = "sql"
 language-servers = ["postgres-lsp"]
 
 [[language]]
+auto-format = false
 name = "json"
 rulers = [120]
 
 [[language]]
+auto-format = false
 name = "jsonc"
 rulers = [120]
 
 [[language]]
+auto-format = false
 name = "dockerfile"
 rulers = [120]
 
 [[language]]
+auto-format = false
 name = "git-commit"
 rulers = [50, 72]
 
 [[language]]
+auto-format = false
 name = "git-rebase"
 rulers = [50, 72]
 
@@ -67,7 +75,6 @@ command = "ruff-lsp"
 
 [language-server.gopls.config]
 "ui.diagnostic.staticcheck" = true
-gofumpt = true
 
 [language-server.golangci-lint-lsp]
 command = "golangci-lint-langserver"
