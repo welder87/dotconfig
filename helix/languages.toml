@@ -1,6 +1,6 @@
 [[language]]
 name = "python"
-language-servers = ["pylsp", "ruff"]
+language-servers = ["pylsp", "ruff", "codebook"]
 auto-format = true
 formatter = { command = "ruff", args = ["format", "-"] }
 scope = "source.python"
@@ -10,12 +10,12 @@ rulers = [88]
 name = "go"
 auto-format = true
 formatter = { command = "golangci-lint", args = ["fmt", "--stdin"] }
-language-servers = ["gopls", "golangci-lint-lsp"]
+language-servers = ["gopls", "golangci-lint-lsp", "codebook"]
 rulers = [88]
 
 [[language]]
 name = "markdown"
-language-servers = ["marksman"]
+language-servers = ["marksman", "codebook"]
 soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
 auto-format = true
 formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "md", "--config-discovery=global"] }
@@ -36,26 +36,31 @@ language-servers = ["postgres-lsp"]
 auto-format = false
 name = "json"
 rulers = [120]
+language-servers = ["codebook"]
 
 [[language]]
 auto-format = false
 name = "jsonc"
 rulers = [120]
+language-servers = ["codebook"]
 
 [[language]]
 auto-format = false
 name = "dockerfile"
 rulers = [120]
+language-servers = ["codebook"]
 
 [[language]]
 auto-format = false
 name = "git-commit"
 rulers = [50, 72]
+language-servers = ["codebook"]
 
 [[language]]
 auto-format = false
 name = "git-rebase"
 rulers = [50, 72]
+language-servers = ["codebook"]
 
 # language servers
 
@@ -100,3 +105,7 @@ name = "source"
 request = "launch"
 completion = [{ name = "entrypoint", completion = "filename", default = "." }]
 args = { mode = "debug", program = "{0}" }
+
+[language-server.codebook]
+command = "codebook-lsp"
+args = ["serve"]
