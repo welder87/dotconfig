@@ -15,7 +15,7 @@ rulers = [88]
 
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "codebook"]
+language-servers = ["marksman", "codebook", "mpls"]
 soft-wrap = { enable = true, max-wrap = 25, wrap-indicator = "" }
 auto-format = true
 formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "md", "--config-discovery=global"] }
@@ -109,3 +109,7 @@ args = { mode = "debug", program = "{0}" }
 [language-server.codebook]
 command = "codebook-lsp"
 args = ["serve"]
+
+[language-server.mpls]
+command = "mpls"
+args = ["--theme", "catppuccin-latte", "--browser", "chromium", "--enable-emoji", "--enable-footnotes", "--enable-wikilinks", "--no-auto"]
