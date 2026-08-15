@@ -1,6 +1,6 @@
 [[language]]
 name = "python"
-language-servers = ["pylsp", "ruff", "codebook"]
+language-servers = ["basedpyright", "ruff", "codebook"]
 auto-format = true
 formatter = { command = "ruff", args = ["format", "-"] }
 scope = "source.python"
