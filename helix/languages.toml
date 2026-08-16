@@ -62,6 +62,13 @@ name = "git-rebase"
 rulers = [50, 72]
 language-servers = ["codebook"]
 
+[[language]]
+auto-format = true
+formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "toml", "--config-discovery=global"] }
+name = "toml"
+rulers = [88]
+language-servers = ["taplo", "codebook"]
+
 # language servers
 
 [language-server.gopls]
@@ -112,4 +119,13 @@ args = ["serve"]
 
 [language-server.mpls]
 command = "mpls"
-args = ["--theme", "catppuccin-latte", "--browser", "chromium", "--enable-emoji", "--enable-footnotes", "--enable-wikilinks", "--no-auto"]
+args = [
+  "--theme",
+  "catppuccin-latte",
+  "--browser",
+  "chromium",
+  "--enable-emoji",
+  "--enable-footnotes",
+  "--enable-wikilinks",
+  "--no-auto",
+]
