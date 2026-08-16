@@ -3,6 +3,9 @@
     "lineWidth": 80,
     "textWrap": "always"
   },
+  "toml": {
+    "lineWidth": 88
+  }
   "excludes": [
     "**/node_modules",
     "**/*-lock.json"
