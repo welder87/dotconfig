@@ -33,16 +33,18 @@ name = "sql"
 language-servers = ["postgres-lsp"]
 
 [[language]]
-auto-format = false
 name = "json"
+auto-format = true
 rulers = [120]
-language-servers = ["codebook"]
+language-servers = ["yaml-language-server", "codebook"]
+formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "json", "--config-discovery=global"] }
 
 [[language]]
-auto-format = false
-name = "jsonc"
+name = "yaml"
+auto-format = true
 rulers = [120]
-language-servers = ["codebook"]
+language-servers = ["yaml-language-server", "codebook"]
+formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "yaml", "--config-discovery=global"] }
 
 [[language]]
 auto-format = false
@@ -63,11 +65,18 @@ rulers = [50, 72]
 language-servers = ["codebook"]
 
 [[language]]
+name = "toml"
 auto-format = true
 formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "toml", "--config-discovery=global"] }
-name = "toml"
 rulers = [88]
 language-servers = ["taplo", "codebook"]
+
+[[language]]
+name = "javascript"
+scope = "source.js"
+auto-format = true
+language-servers = ["typescript-language-server"]
+formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "js", "--config-discovery=global"] }
 
 # language servers
 
@@ -92,7 +101,14 @@ command = "ruff-lsp"
 command = "golangci-lint-langserver"
 
 [language-server.golangci-lint-lsp.config]
-command = ["golangci-lint", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
+command = [
+  "golangci-lint",
+  "run",
+  "--output.json.path",
+  "stdout",
+  "--show-stats=false",
+  "--issues-exit-code=1",
+]
 
 [language-server.marksman]
 command = "marksman"
