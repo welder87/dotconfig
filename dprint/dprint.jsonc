@@ -6,7 +6,7 @@
   "toml": {
     "lineWidth": 88
   },
-  "javascript": {
+  "typescript": {
     "lineWidth": 88
   },
   "excludes": [
