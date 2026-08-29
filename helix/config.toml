@@ -42,6 +42,19 @@ right = [
   "selections",
   "register",
   "position",
+  "file-type",
+  "file-line-ending",
+  "file-indent-style",
   "file-encoding",
   "version-control",
 ]
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.auto-save.after-delay]
+enable = true
+timeout = 2000
+
+[keys.insert]
+"esc" = ["normal_mode", ":w"]
