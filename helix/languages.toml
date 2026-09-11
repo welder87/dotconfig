@@ -65,6 +65,30 @@ rulers = [50, 72]
 language-servers = ["codebook"]
 
 [[language]]
+name = "git-attributes"
+auto-format = false
+rulers = [50, 72]
+language-servers = ["codebook"]
+
+[[language]]
+name = "git-config"
+auto-format = false
+rulers = [50, 72]
+language-servers = ["codebook"]
+
+[[language]]
+name = "git-ignore"
+auto-format = false
+rulers = [50, 72]
+language-servers = ["codebook"]
+
+[[language]]
+name = "git-notes"
+auto-format = false
+rulers = [50, 72]
+language-servers = ["codebook"]
+
+[[language]]
 name = "toml"
 auto-format = true
 formatter = { command = "dprint-debug", args = ["fmt", "--stdin", "toml", "--config-discovery=global"] }
