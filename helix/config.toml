@@ -18,14 +18,6 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
-[editor.lsp]
-display-messages = true
-display-inlay-hints = true
-snippets = true
-goto-reference-include-declaration = true
-display-signature-help-docs = true
-auto-signature-help = false
-
 [editor.whitespace.render]
 space = "all"
 tab = "all"
