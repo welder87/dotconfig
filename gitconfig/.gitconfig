@@ -16,6 +16,7 @@
 	treev = log --decorate --oneline --graph
 	shortv = log --decorate --oneline
 	lcm = log -n 1 --pretty=format:"%s"
+	last = show --stat
 [interactive]
 	diffFilter = delta --color-only
 [delta]
