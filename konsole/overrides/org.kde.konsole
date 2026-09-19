@@ -1,0 +1,2 @@
+[Context]
+filesystems=~/projects/dotconfig/konsole/config:create;~/projects/dotconfig/konsole/data/konsole;xdg-config/kdeglobals:ro;

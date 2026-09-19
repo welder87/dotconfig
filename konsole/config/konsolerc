@@ -1,0 +1,18 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=work.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RemoveWindowTitleBarAndFrame=true
+ShowWindowTitleOnTitleBar=true
+
+[SearchSettings]
+SearchCaseSensitive=true
+SearchRegExpression=true
+
+[UiSettings]
+ColorScheme=
