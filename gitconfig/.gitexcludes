@@ -9,3 +9,4 @@
 **/.helix/
 **/..zcode/
 .codebook.toml
+.cbmignore
